@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		495997CF2887E571001A9E36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495997CE2887E571001A9E36 /* AppDelegate.swift */; };
 		495997D12887E571001A9E36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495997D02887E571001A9E36 /* SceneDelegate.swift */; };
-		495997D32887E571001A9E36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495997D22887E571001A9E36 /* ViewController.swift */; };
 		495997D62887E571001A9E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495997D42887E571001A9E36 /* Main.storyboard */; };
 		495997D82887E575001A9E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495997D72887E575001A9E36 /* Assets.xcassets */; };
 		495997DB2887E575001A9E36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495997D92887E575001A9E36 /* LaunchScreen.storyboard */; };
+		49EF62C3288815D6001B7EFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EF62C2288815D6001B7EFF /* ViewController.swift */; };
 		DCD044CDA7F74C2A7186A3F5 /* Pods_DummyShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393CEA4D5AD22C7A72F59B7D /* Pods_DummyShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,11 +22,11 @@
 		495997CB2887E571001A9E36 /* DummyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495997CE2887E571001A9E36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495997D02887E571001A9E36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		495997D22887E571001A9E36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		495997D52887E571001A9E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		495997D72887E575001A9E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495997DA2887E575001A9E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495997DC2887E575001A9E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49EF62C2288815D6001B7EFF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4ADEF2154AFED69502A93B3 /* Pods-DummyShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DummyShop.release.xcconfig"; path = "Target Support Files/Pods-DummyShop/Pods-DummyShop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +76,7 @@
 			children = (
 				495997CE2887E571001A9E36 /* AppDelegate.swift */,
 				495997D02887E571001A9E36 /* SceneDelegate.swift */,
-				495997D22887E571001A9E36 /* ViewController.swift */,
+				49EF62C2288815D6001B7EFF /* ViewController.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -91,8 +91,8 @@
 		495997E32887E752001A9E36 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				495997D42887E571001A9E36 /* Main.storyboard */,
 				495997D92887E575001A9E36 /* LaunchScreen.storyboard */,
+				495997D42887E571001A9E36 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -122,6 +122,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 495997DF2887E575001A9E36 /* Build configuration list for PBXNativeTarget "DummyShop" */;
 			buildPhases = (
+				49EF62C1288809B3001B7EFF /* SwiftLint */,
 				616748399002928C37531330 /* [CP] Check Pods Manifest.lock */,
 				495997C72887E571001A9E36 /* Sources */,
 				495997C82887E571001A9E36 /* Frameworks */,
@@ -145,6 +146,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = Tinygram;
 				TargetAttributes = {
 					495997CA2887E571001A9E36 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -183,6 +185,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		49EF62C1288809B3001B7EFF /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		616748399002928C37531330 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,8 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495997D32887E571001A9E36 /* ViewController.swift in Sources */,
 				495997CF2887E571001A9E36 /* AppDelegate.swift in Sources */,
+				49EF62C3288815D6001B7EFF /* ViewController.swift in Sources */,
 				495997D12887E571001A9E36 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

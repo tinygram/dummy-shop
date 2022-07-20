@@ -6,5 +6,6 @@ target 'DummyShop' do
   use_frameworks!
 
   # Pods for DummyShop
+  pod 'SwiftLint'
 
 end

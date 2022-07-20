@@ -6,32 +6,57 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		8E2DED9271149C1F2A36514EC5149EE5 /* Pods-DummyShop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37408AEB2B0FEE54B2CEE9C2B23A8A7D /* Pods-DummyShop-dummy.m */; };
-		BB195EA3DFEC09E218594970C99FB252 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C4FB70E28A6A34EA060C79578053C629 /* Pods-DummyShop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1ACB6FB531DEC2B1CD490850C75D56 /* Pods-DummyShop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2281EB6D2910EDB1161D9C9B3446E417 /* Pods-DummyShop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1ACB6FB531DEC2B1CD490850C75D56 /* Pods-DummyShop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		413AF0AA56F206D8A9330C190DF70DB3 /* Pods-DummyShop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37408AEB2B0FEE54B2CEE9C2B23A8A7D /* Pods-DummyShop-dummy.m */; };
+		B5214831FC24333BDF8CBB479CA65516 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54B473044D8795376CE6E38EB037D2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		37408AEB2B0FEE54B2CEE9C2B23A8A7D /* Pods-DummyShop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DummyShop-dummy.m"; sourceTree = "<group>"; };
+		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		3F262ECDF7F3041BD68138A780A0CFFE /* Pods-DummyShop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DummyShop.modulemap"; sourceTree = "<group>"; };
 		657E69394BBC67ACBB144A6EA32755FC /* Pods-DummyShop-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DummyShop-acknowledgements.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7D9B24B5B23507C9B02159535F272543 /* Pods-DummyShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DummyShop.debug.xcconfig"; sourceTree = "<group>"; };
+		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		8792EB06B3F9F9CDF6C9A47A8353A6EC /* Pods-DummyShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DummyShop.release.xcconfig"; sourceTree = "<group>"; };
 		9B1ACB6FB531DEC2B1CD490850C75D56 /* Pods-DummyShop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DummyShop-umbrella.h"; sourceTree = "<group>"; };
 		9D43357B991A7C37F40028E7708E465A /* Pods-DummyShop-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DummyShop-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B174912DE341E2C7B5FAEAE3C6AF9627 /* Pods-DummyShop */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DummyShop"; path = Pods_DummyShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE553D1D3C4012CEA23F2CF0452A9A8A /* Pods-DummyShop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DummyShop-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AF6CF46A701647F807661C76E315A9C0 /* Frameworks */ = {
+		A05000B639E72469E04936AC9BD40D2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB195EA3DFEC09E218594970C99FB252 /* Foundation.framework in Frameworks */,
+				B5214831FC24333BDF8CBB479CA65516 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +87,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
+				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CDF7B4B1355C67803493506DE2D85784 /* Pods-DummyShop */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
 				530401FC7CD9655FF3CF3A23B3A2C2D7 /* Products */,
 				5FC9FAA4F64C3250D2AF5DCA7A0D13C4 /* Targets Support Files */,
 			);
@@ -96,14 +140,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E6C02DDE6BAA94248228F008AF326E4D /* Headers */ = {
+		EECB4A8ED040C4C6CED47D881E2FDD6B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FB70E28A6A34EA060C79578053C629 /* Pods-DummyShop-umbrella.h in Headers */,
+				2281EB6D2910EDB1161D9C9B3446E417 /* Pods-DummyShop-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,16 +164,17 @@
 /* Begin PBXNativeTarget section */
 		27F61AAE309A52F5F8685259207AA104 /* Pods-DummyShop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF7AA79FDCD96565C06D0BF00EFB1A54 /* Build configuration list for PBXNativeTarget "Pods-DummyShop" */;
+			buildConfigurationList = 6C761068BD20C5AD5F5278CF70D71490 /* Build configuration list for PBXNativeTarget "Pods-DummyShop" */;
 			buildPhases = (
-				E6C02DDE6BAA94248228F008AF326E4D /* Headers */,
-				0FCB9F87391A37F8CE82C75AC30272BD /* Sources */,
-				AF6CF46A701647F807661C76E315A9C0 /* Frameworks */,
-				68B29CA7BE6313526EF3CF054F4F3BAD /* Resources */,
+				EECB4A8ED040C4C6CED47D881E2FDD6B /* Headers */,
+				CAE4BA90946D8E06331639671F0C7F7C /* Sources */,
+				A05000B639E72469E04936AC9BD40D2C /* Frameworks */,
+				ABDBE1A4EE2B68AE02DBB270EB7A169D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				68B9BE2ADD6A2B9BF1BF1A58CAB5C5EF /* PBXTargetDependency */,
 			);
 			name = "Pods-DummyShop";
 			productName = Pods_DummyShop;
@@ -135,7 +188,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1340;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -151,12 +204,13 @@
 			projectRoot = "";
 			targets = (
 				27F61AAE309A52F5F8685259207AA104 /* Pods-DummyShop */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		68B29CA7BE6313526EF3CF054F4F3BAD /* Resources */ = {
+		ABDBE1A4EE2B68AE02DBB270EB7A169D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,18 +220,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0FCB9F87391A37F8CE82C75AC30272BD /* Sources */ = {
+		CAE4BA90946D8E06331639671F0C7F7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E2DED9271149C1F2A36514EC5149EE5 /* Pods-DummyShop-dummy.m in Sources */,
+				413AF0AA56F206D8A9330C190DF70DB3 /* Pods-DummyShop-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		68B9BE2ADD6A2B9BF1BF1A58CAB5C5EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 54B473044D8795376CE6E38EB037D2FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -243,7 +306,7 @@
 			};
 			name = Debug;
 		};
-		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,7 +368,24 @@
 			};
 			name = Release;
 		};
-		59331452210AD9DB6F0F2A889927DBEF /* Release */ = {
+		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6F7104C9EF059F83C4BA3E0A9D00F0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8792EB06B3F9F9CDF6C9A47A8353A6EC /* Pods-DummyShop.release.xcconfig */;
 			buildSettings = {
@@ -321,7 +401,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DummyShop/Pods-DummyShop-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,7 +423,7 @@
 			};
 			name = Release;
 		};
-		8BC8A81EE03D26452B7A43B7F68C313C /* Debug */ = {
+		C0FFE3B0408D160E4816B9D6488C5328 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D9B24B5B23507C9B02159535F272543 /* Pods-DummyShop.debug.xcconfig */;
 			buildSettings = {
@@ -359,7 +439,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DummyShop/Pods-DummyShop-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,23 +460,48 @@
 			};
 			name = Debug;
 		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
-				2DE0D8898245310716431F92FA4989FF /* Release */,
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF7AA79FDCD96565C06D0BF00EFB1A54 /* Build configuration list for PBXNativeTarget "Pods-DummyShop" */ = {
+		6C761068BD20C5AD5F5278CF70D71490 /* Build configuration list for PBXNativeTarget "Pods-DummyShop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BC8A81EE03D26452B7A43B7F68C313C /* Debug */,
-				59331452210AD9DB6F0F2A889927DBEF /* Release */,
+				C0FFE3B0408D160E4816B9D6488C5328 /* Debug */,
+				B6F7104C9EF059F83C4BA3E0A9D00F0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */,
+				AD81E62ACCB0B7A923FC8AA288F9921E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
