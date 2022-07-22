@@ -3,6 +3,7 @@
 //  DummyShop
 //
 //  Created by Kang Byeonghak on 2022/07/20.
+//  Copyright © 2022 Tinygram. All rights reserved.
 //
 
 import UIKit
