@@ -48,3 +48,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }
 
 }
+
+// MARK: - View Controller Accessor
+
+extension SceneDelegate {
+  static var shared: SceneDelegate {
+    return UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate
+  }
+
+  static var root: RootViewController {
+    return shared.window!.rootViewController as! RootViewController
+  }
+
+  static var main: MainViewController? {
+    return root.children.first as? MainViewController
+  }
+}

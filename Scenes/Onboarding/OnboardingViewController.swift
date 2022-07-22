@@ -15,3 +15,9 @@ class OnboardingViewController: UIViewController {
 
   }
 }
+
+extension OnboardingViewController {
+  @IBAction func didTapDone(_ sender: Any) {
+    SceneDelegate.root.contentType = .signing
+  }
+}
