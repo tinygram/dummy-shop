@@ -10,8 +10,18 @@ import UIKit
 
 class SigningViewController: UIViewController {
 
+  @IBOutlet weak var usernameField: UITextField!
+  @IBOutlet weak var passwordField: UITextField!
+  @IBOutlet weak var signInButton: UIButton!
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
+  }
+}
+
+extension SigningViewController {
+  @IBAction func didTapSignIn(_ sender: Any) {
+    SceneDelegate.root.contentType = .main
   }
 }

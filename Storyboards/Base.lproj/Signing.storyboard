@@ -15,9 +15,56 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-7i-NM7" userLabel="usernameField">
+                                <rect key="frame" x="30" y="74" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="saE-yd-ucu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1i4-b4-27f" userLabel="passwordField">
+                                <rect key="frame" x="30" y="154" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="URh-AO-rrf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWt-AR-Cg1" userLabel="signInButton">
+                                <rect key="frame" x="30" y="234" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="k3e-1W-TCd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign In">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapSignIn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="L5E-0e-EbX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1i4-b4-27f" firstAttribute="top" secondItem="e2w-7i-NM7" secondAttribute="bottom" constant="30" id="0Fm-NO-dYI"/>
+                            <constraint firstItem="e2w-7i-NM7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="2KU-gr-aeh"/>
+                            <constraint firstItem="cWt-AR-Cg1" firstAttribute="top" secondItem="1i4-b4-27f" secondAttribute="bottom" constant="30" id="4hR-2l-w1k"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1i4-b4-27f" secondAttribute="trailing" constant="30" id="DAK-Vn-aXt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="e2w-7i-NM7" secondAttribute="trailing" constant="30" id="ONN-cj-Y6V"/>
+                            <constraint firstItem="e2w-7i-NM7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="SJl-fW-G1O"/>
+                            <constraint firstItem="cWt-AR-Cg1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="drq-7I-Tqu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cWt-AR-Cg1" secondAttribute="trailing" constant="30" id="mO1-S4-ArF"/>
+                            <constraint firstItem="1i4-b4-27f" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="w1a-0s-fD7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="1i4-b4-27f" id="eDo-Pl-hse"/>
+                        <outlet property="signInButton" destination="cWt-AR-Cg1" id="2iC-8e-2L9"/>
+                        <outlet property="usernameField" destination="e2w-7i-NM7" id="NPi-XK-0Nk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
