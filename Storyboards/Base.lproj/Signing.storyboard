@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-7i-NM7" userLabel="usernameField">
-                                <rect key="frame" x="30" y="74" width="354" height="50"/>
+                                <rect key="frame" x="30" y="144" width="354" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="saE-yd-ucu"/>
                                 </constraints>
@@ -25,7 +25,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1i4-b4-27f" userLabel="passwordField">
-                                <rect key="frame" x="30" y="154" width="354" height="50"/>
+                                <rect key="frame" x="30" y="224" width="354" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="URh-AO-rrf"/>
                                 </constraints>
@@ -33,7 +33,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWt-AR-Cg1" userLabel="signInButton">
-                                <rect key="frame" x="30" y="234" width="354" height="50"/>
+                                <rect key="frame" x="30" y="304" width="354" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="k3e-1W-TCd"/>
                                 </constraints>
@@ -50,7 +50,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1i4-b4-27f" firstAttribute="top" secondItem="e2w-7i-NM7" secondAttribute="bottom" constant="30" id="0Fm-NO-dYI"/>
-                            <constraint firstItem="e2w-7i-NM7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="2KU-gr-aeh"/>
+                            <constraint firstItem="e2w-7i-NM7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="2KU-gr-aeh"/>
                             <constraint firstItem="cWt-AR-Cg1" firstAttribute="top" secondItem="1i4-b4-27f" secondAttribute="bottom" constant="30" id="4hR-2l-w1k"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1i4-b4-27f" secondAttribute="trailing" constant="30" id="DAK-Vn-aXt"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="e2w-7i-NM7" secondAttribute="trailing" constant="30" id="ONN-cj-Y6V"/>

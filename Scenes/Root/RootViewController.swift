@@ -43,7 +43,7 @@ extension RootViewController {
     guard let fromVC = children.first else { return }
     guard type(of: toVC) != type(of: fromVC) else { return }
 
-    toVC.view.frame = contentView.frame
+    toVC.view.frame = contentView.bounds
 
     fromVC.willMove(toParent: nil)
     addChild(toVC)

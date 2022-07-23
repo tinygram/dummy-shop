@@ -12,6 +12,12 @@
 		495997D62887E571001A9E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495997D42887E571001A9E36 /* Main.storyboard */; };
 		495997D82887E575001A9E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495997D72887E575001A9E36 /* Assets.xcassets */; };
 		495997DB2887E575001A9E36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495997D92887E575001A9E36 /* LaunchScreen.storyboard */; };
+		49917CEA288C14FE00B91452 /* ProductNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49917CE9288C14FE00B91452 /* ProductNavigationController.swift */; };
+		49917CEC288C150F00B91452 /* CartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49917CEB288C150F00B91452 /* CartNavigationController.swift */; };
+		49917CEE288C151D00B91452 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49917CED288C151D00B91452 /* ProfileNavigationController.swift */; };
+		49917CF0288C154200B91452 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49917CEF288C154200B91452 /* ProfileViewController.swift */; };
+		49917CF2288C155300B91452 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49917CF1288C155300B91452 /* CartViewController.swift */; };
+		49917CF4288C156300B91452 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49917CF3288C156300B91452 /* ProductViewController.swift */; };
 		49AFB25B2889350300A452A8 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AFB2592889350300A452A8 /* Root.storyboard */; };
 		49AFB25E2889351800A452A8 /* Signing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AFB25C2889351800A452A8 /* Signing.storyboard */; };
 		49AFB267288935D100A452A8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AFB266288935D100A452A8 /* RootViewController.swift */; };
@@ -34,6 +40,12 @@
 		495997D72887E575001A9E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495997DA2887E575001A9E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495997DC2887E575001A9E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49917CE9288C14FE00B91452 /* ProductNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNavigationController.swift; sourceTree = "<group>"; };
+		49917CEB288C150F00B91452 /* CartNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartNavigationController.swift; sourceTree = "<group>"; };
+		49917CED288C151D00B91452 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
+		49917CEF288C154200B91452 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		49917CF1288C155300B91452 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		49917CF3288C156300B91452 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		49AFB25A2889350300A452A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Root.storyboard; sourceTree = "<group>"; };
 		49AFB25D2889351800A452A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Signing.storyboard; sourceTree = "<group>"; };
 		49AFB266288935D100A452A8 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -100,8 +112,11 @@
 		495997E22887E730001A9E36 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				49917CE7288C149C00B91452 /* Cart */,
 				49AFB263288935A300A452A8 /* Main */,
 				49AFB265288935B000A452A8 /* Onboarding */,
+				49917CE6288C148C00B91452 /* Product */,
+				49917CE8288C14A400B91452 /* Profile */,
 				49AFB2622889359000A452A8 /* Root */,
 				49AFB264288935AA00A452A8 /* Signing */,
 			);
@@ -126,6 +141,33 @@
 				495997DC2887E575001A9E36 /* Info.plist */,
 			);
 			path = Supports;
+			sourceTree = "<group>";
+		};
+		49917CE6288C148C00B91452 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				49917CE9288C14FE00B91452 /* ProductNavigationController.swift */,
+				49917CF3288C156300B91452 /* ProductViewController.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		49917CE7288C149C00B91452 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				49917CEB288C150F00B91452 /* CartNavigationController.swift */,
+				49917CF1288C155300B91452 /* CartViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		49917CE8288C14A400B91452 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				49917CED288C151D00B91452 /* ProfileNavigationController.swift */,
+				49917CEF288C154200B91452 /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		49AFB2622889359000A452A8 /* Root */ = {
@@ -300,11 +342,17 @@
 			files = (
 				49AFB2722889494100A452A8 /* UIViewController+Extension.swift in Sources */,
 				49AFB26F2889385200A452A8 /* MainViewController.swift in Sources */,
+				49917CF2288C155300B91452 /* CartViewController.swift in Sources */,
+				49917CF4288C156300B91452 /* ProductViewController.swift in Sources */,
 				49AFB26D2889381500A452A8 /* SigningViewController.swift in Sources */,
 				495997CF2887E571001A9E36 /* AppDelegate.swift in Sources */,
+				49917CEC288C150F00B91452 /* CartNavigationController.swift in Sources */,
 				49AFB26B2889362300A452A8 /* OnboardingViewController.swift in Sources */,
 				49AFB267288935D100A452A8 /* RootViewController.swift in Sources */,
+				49917CEE288C151D00B91452 /* ProfileNavigationController.swift in Sources */,
 				495997D12887E571001A9E36 /* SceneDelegate.swift in Sources */,
+				49917CEA288C14FE00B91452 /* ProductNavigationController.swift in Sources */,
+				49917CF0288C154200B91452 /* ProfileViewController.swift in Sources */,
 				49AFB269288935F200A452A8 /* SplashViewController.swift in Sources */,
 				49AFB27428894A0F00A452A8 /* UIStoryboard+Extension.swift in Sources */,
 			);
