@@ -7,5 +7,6 @@ target 'DummyShop' do
 
   # Pods for DummyShop
   pod 'SwiftLint'
+  pod 'Alamofire'
 
 end
