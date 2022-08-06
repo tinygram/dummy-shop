@@ -14,6 +14,8 @@
 		495997DB2887E575001A9E36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495997D92887E575001A9E36 /* LaunchScreen.storyboard */; };
 		49904A8B289E2F2D00E06BDA /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49904A8A289E2F2D00E06BDA /* Parameters.swift */; };
 		49904A8D289E477D00E06BDA /* User+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49904A8C289E477D00E06BDA /* User+Session.swift */; };
+		49904A8F289E4D9900E06BDA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49904A8E289E4D9900E06BDA /* ProductCell.swift */; };
+		49904A91289E501E00E06BDA /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49904A90289E501E00E06BDA /* UITableView+Extension.swift */; };
 		49917CEA288C14FE00B91452 /* ProductNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49917CE9288C14FE00B91452 /* ProductNavigationController.swift */; };
 		49917CEC288C150F00B91452 /* CartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49917CEB288C150F00B91452 /* CartNavigationController.swift */; };
 		49917CEE288C151D00B91452 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49917CED288C151D00B91452 /* ProfileNavigationController.swift */; };
@@ -52,6 +54,8 @@
 		495997DC2887E575001A9E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49904A8A289E2F2D00E06BDA /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
 		49904A8C289E477D00E06BDA /* User+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Session.swift"; sourceTree = "<group>"; };
+		49904A8E289E4D9900E06BDA /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		49904A90289E501E00E06BDA /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		49917CE9288C14FE00B91452 /* ProductNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNavigationController.swift; sourceTree = "<group>"; };
 		49917CEB288C150F00B91452 /* CartNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartNavigationController.swift; sourceTree = "<group>"; };
 		49917CED288C151D00B91452 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			children = (
 				49917CE9288C14FE00B91452 /* ProductNavigationController.swift */,
 				49917CF3288C156300B91452 /* ProductViewController.swift */,
+				49904A8E289E4D9900E06BDA /* ProductCell.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			children = (
 				49AFB2712889494100A452A8 /* UIViewController+Extension.swift */,
 				49AFB27328894A0F00A452A8 /* UIStoryboard+Extension.swift */,
+				49904A90289E501E00E06BDA /* UITableView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,12 +429,14 @@
 				49917CEC288C150F00B91452 /* CartNavigationController.swift in Sources */,
 				49AFB26B2889362300A452A8 /* OnboardingViewController.swift in Sources */,
 				49CCDBC5289BA7BB008D1572 /* HttpRouter.swift in Sources */,
+				49904A91289E501E00E06BDA /* UITableView+Extension.swift in Sources */,
 				49CCDBCD289BAD89008D1572 /* HttpRouter+Products.swift in Sources */,
 				49AFB267288935D100A452A8 /* RootViewController.swift in Sources */,
 				49CCDBC1289BA6F8008D1572 /* HttpRoutable.swift in Sources */,
 				49917CEE288C151D00B91452 /* ProfileNavigationController.swift in Sources */,
 				49CCDBBF289BA6E9008D1572 /* HttpClient.swift in Sources */,
 				495997D12887E571001A9E36 /* SceneDelegate.swift in Sources */,
+				49904A8F289E4D9900E06BDA /* ProductCell.swift in Sources */,
 				49917CEA288C14FE00B91452 /* ProductNavigationController.swift in Sources */,
 				49CCDBCF289BADD8008D1572 /* HttpRouter+Auth.swift in Sources */,
 				49917CF0288C154200B91452 /* ProfileViewController.swift in Sources */,

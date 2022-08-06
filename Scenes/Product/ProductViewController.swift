@@ -10,9 +10,30 @@ import UIKit
 
 class ProductViewController: UITableViewController {
 
+  var products: [Product] = [] {
+    didSet {
+      tableView.reloadData()
+    }
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    fetchProducts()
+  }
+}
+
+extension ProductViewController {
+  func fetchProducts() {
+    let route = HttpRouter.Products.products
+
+    HttpClient.request(route).responseDecodable(of: Product.List.self) { [weak self] response in
+      debugPrint(response)
+      guard let self = self else { return }
+      guard let list = response.value else { return }
+
+      self.products = list.products
+    }
   }
 }
 
@@ -20,12 +41,19 @@ class ProductViewController: UITableViewController {
 
 extension ProductViewController {
   override func numberOfSections(in tableView: UITableView) -> Int {
-    // #warning Incomplete implementation, return the number of sections
-    return 0
+    return 1
   }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    // #warning Incomplete implementation, return the number of rows
-    return 0
+    return products.count
+  }
+
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(for: indexPath) as ProductCell
+
+    let product = products[indexPath.row]
+    cell.configure(product)
+
+    return cell
   }
 }

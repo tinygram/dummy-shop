@@ -21,3 +21,12 @@ struct Product: Decodable {
   let thumbnail: String
   let images: [String]
 }
+
+extension Product {
+  struct List: Decodable {
+    let products: [Product]
+    let total: Int
+    let skip: Int
+    let limit: Int
+  }
+}
