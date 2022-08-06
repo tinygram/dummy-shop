@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SigningViewController: UIViewController {
 
@@ -22,6 +23,16 @@ class SigningViewController: UIViewController {
 
 extension SigningViewController {
   @IBAction func didTapSignIn(_ sender: Any) {
-    SceneDelegate.root.contentType = .main
+    let auth = User.Auth(username: "kminchelle",
+                         password: "0lelplR")
+    let route = HttpRouter.Auth.login(auth: auth)
+
+    HttpClient.request(route).responseDecodable(of: User.self) { response in
+      debugPrint(response)
+
+      guard let user = response.value else { return }
+      User.signed = user
+      SceneDelegate.root.contentType = .main
+    }
   }
 }
