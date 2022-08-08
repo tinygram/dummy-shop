@@ -23,7 +23,12 @@ extension HttpRoutable {
   }
 
   var headers: HTTPHeaders? {
-    return nil
+    var headers = HTTPHeaders.default
+    
+    guard let token = User.signed?.token else { return nil }
+    headers["Authorization"] = "Bearer \(token)"
+    
+    return headers
   }
 
   var parameters: Parameters? {
